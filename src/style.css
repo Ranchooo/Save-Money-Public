@@ -1,0 +1,103 @@
+/* design token */
+
+:root {
+    --blue-1: #e8f4ff;
+    --blue-2: #bcd8f7;
+    --blue-3: #93bbef;
+    --blue-4: #6c9ee8;
+    --blue-5: #477fe0;
+    --blue-6: #2562d8;
+    --blue-7: #1747b5;
+    --blue-8: #0d3092;
+    --blue-9: #051e6f;
+    --blue-10: #000f4d;
+    --green-6: #00b42a;
+    --yellow-6: #ffc303;
+    --orange-6: #ff7200;
+    --red-6: #f53f3f;
+    --magenta-6: #f5319d;
+    --purple-6: #722ed1;
+    --grey-1: #f7f8fa;
+    --grey-2: #f2f3f5;
+    --grey-3: #e5e6eb;
+    --grey-4: #c9cdd4;
+    --grey-5: #a9aeb8;
+    --grey-6: #86909c;
+    --grey-7: #6b7785;
+    --grey-8: #4e5969;
+    --grey-9: #272e3b;
+    --grey-10: #1d2129;
+    --white: #ffffff;
+    --black: #1e1e1e;
+}
+
+:root[class='figma-light'] {
+    --text: var(--grey-9);
+    --text-weak: var(--grey-8);
+    --text-weaker: var(--grey-6);
+    --text-inverse: var(--white);
+    --bg: var(--white);
+    --bg-mask: var(--black);
+    --border: var(--grey-4);
+    --text-brand: var(--blue-6);
+    --bg-brand: var(--blue-6);
+    --border-brand: var(--blue-6);
+    --border-brand-strong: var(--blue-7);
+    --border-strong: var(--grey-5);
+    --bg-weak: var(--grey-1);
+    --bg-strong: var(--grey-3);
+    --bg-ultrastrong: var(--white);
+    --border-brand-weak: var(--blue-5);
+    --border-weak: var(--grey-3);
+    --bg-brand-weak: var(--blue-5);
+    --bg-brand-strong: var(--blue-7);
+}
+
+:root[class='figma-dark'] {
+    --text: var(--grey-2);
+    --text-weak: var(--grey-6);
+    --text-weaker: var(--grey-8);
+    --text-inverse: var(--white);
+    --bg: #2c2c2c;
+    --bg-mask: var(--black);
+    --border: var(--grey-8);
+    --text-brand: var(--blue-6);
+    --bg-brand: var(--blue-7);
+    --border-brand: var(--blue-6);
+    --border-brand-strong: var(--blue-6);
+    --border-strong: var(--grey-5);
+    --bg-weak: var(--grey-10);
+    --bg-strong: var(--grey-10);
+    --bg-ultrastrong: var(--black);
+    --border-brand-weak: var(--blue-4);
+    --border-weak: #343c46;
+    --bg-brand-weak: var(--blue-5);
+    --bg-brand-strong: var(--blue-5);
+}
+
+/* 全局基础样式 */
+
+html {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--bg);
+}
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    padding: 0;
+}
+input:focus {
+    outline: none;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

@@ -1,0 +1,27 @@
+{
+  "name": "save-money",
+  "private": true,
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "start": "node server.js",
+    "dev:all": "concurrently \"npm run dev\" \"npm run start\""
+  },
+  "author": "rancho",
+  "license": "",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "vue": "^3.4.29",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.2.3",
+    "prettier": "3.3.2",
+    "typescript": "*",
+    "vite": "^4.3.5",
+    "concurrently": "^8.0.1"
+  }
+}
